@@ -1,0 +1,24 @@
+{
+  "name": "cypress-advanced-tau",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "./node_modules/.bin/cypress open --e2e --browser chrome",
+    "cy:run": "./node_modules/.bin/cypress run",
+    "postinstall": "git submodule update --init --recursive --remote && cd trelloapp && npm install",
+    "start": "cd trelloapp && npm start",
+    "trello": "cd trelloapp && npm start"
+  },
+  "keywords": [
+    "cypress",
+    "workshop",
+    "javascript"
+  ],
+  "author": "Filip Hric (https://filiphric.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.3.3",
+    "typescript": "^5.2.2"
+  }
+}
